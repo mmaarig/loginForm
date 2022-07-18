@@ -30,13 +30,13 @@
 					<img src="images/img-06.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" style=" margin-top: -70px;">
+				<form onsubmit="signup(); return false;" class="login100-form validate-form" style=" margin-top: -70px;" >
 					<span class="login100-form-title">
 						Member Join
 					</span>
 
                     <div class="wrap-input100 validate-input" data-validate = "Name is required">
-						<input class="input100" type="text" name="name" placeholder="Name">
+						<input class="input100" type="text" name="name" placeholder="Name" id="firstname">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -44,7 +44,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+						<input class="input100" type="text" name="email" placeholder="Email" id="email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -52,7 +52,15 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="pass" placeholder="Password" id="password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Confirm Password" id="confirmpassword">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -60,7 +68,7 @@
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate = "Gender is required">
-						<input class="input100" type="text" name="name" placeholder="Gender">
+						<input class="input100" type="text" name="name" placeholder="Gender" id="gender">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-superpowers" aria-hidden="true"></i>
@@ -68,7 +76,7 @@
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate = "Address is required">
-						<input class="input100" type="text" name="name" placeholder="Address">
+						<input class="input100" type="text" name="name" placeholder="Address" id="address">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-home" aria-hidden="true"></i>
@@ -76,7 +84,7 @@
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate = "City is required">
-						<input class="input100" type="text" name="name" placeholder="City">
+						<input class="input100" type="text" name="name" placeholder="City" id="city">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-street-view" aria-hidden="true"></i>
@@ -84,9 +92,10 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Signup
-						</button>
+						<!-- <button class="login100-form-btn">
+							Sign Up
+						</button> -->
+						<input type="submit" value="Sign Up" class="login100-form-btn">
 					</div>
 					<!-- <div class="text-center p-t-12">
 						<span class="txt1">
@@ -126,6 +135,7 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="index.js"></script>
 
 </body>
 </html>

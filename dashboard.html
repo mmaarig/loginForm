@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login</title>
+	<title>Dashboard</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -30,41 +30,63 @@
 					<img src="images/img-06.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form" onsubmit="login(); return false;">
+				<div class="login100-form validate-form">
 					<span class="login100-form-title">
-						Member Login
+						Welcome to Applify 
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email" id="login_email">
-						<span class="focus-input100"></span>
+
+                    <div>
+                        <div class="login100-form-title">
+                            <p>Name : <span  id="userName"></span></p>   
+                            <p>Email : <span id="userEmail"></span></p>   
+                            <p>Gender : <span id="userGender"></span></p>   
+                            <p>Address : <span id="userAddress"></span></p>   
+                            <p>City : <span id="userCity"></span></p>   
+                        </div>
+                    </div>
+					<!-- <div class="wrap-input100 validate-input" id="firstname">	
+                        <span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password" id="login_password">
-						<span class="focus-input100"></span>
+                    <div class="wrap-input100 validate-input" id="email">	
+                        <span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
 					</div>
+                    <div class="wrap-input100 validate-input" id="gender">	
+                        <span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input100 validate-input" id="address">	
+                        <span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input100 validate-input" id="city">	
+                        <span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div> -->
+
+
 					
-					<div class="container-login100-form-btn">
-						<!-- <button class="login100-form-btn">
-							Login
-						</button> -->
-						<input type="submit" value="Login" class="login100-form-btn">
-					</div><br>
+					
 
 					<div class="text-center p-t-136">
 						<a class="txt2" href="./signup.html">
-							Sign Up
+							Logout
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
 					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
